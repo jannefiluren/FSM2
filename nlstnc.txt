@@ -1,0 +1,10 @@
+&drive
+ pathmet = "/home/jmg/projects/FSM2/data/input"
+ pathres = "/home/jmg/projects/FSM2/data/output"
+ pathparam = "/home/jmg/projects/FSM2/data/params/params_50km.nc"
+ spatial_res = "50km"
+/
+&simperiod
+ istart = 1
+ istop = 8000
+/

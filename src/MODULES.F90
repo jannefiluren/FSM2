@@ -62,6 +62,15 @@ real :: &
   zT,                &! Temperature measurement height (m)
   zU                  ! Wind speed measurement height (m)
 real, allocatable :: &
+  LWtmp(:),           &! Incoming longwave radiation (W/m^2)
+  Pstmp(:),           &! Surface pressure (Pa)
+  Qatmp(:),           &! Specific humidity (kg/kg)
+  Rftmp(:),           &! Rainfall rate (kg/m^2/s)
+  Sftmp(:),           &! Snowfall rate (kg/m^2/s)
+  SWtmp(:),           &! Incoming shortwave radiation (W/m^2)
+  Tatmp(:),           &! Air temperature (K)
+  Uatmp(:),           &! Wind speed (m/s)
+
   LW(:,:),           &! Incoming longwave radiation (W/m^2)
   Ps(:,:),           &! Surface pressure (Pa)
   Qa(:,:),           &! Specific humidity (kg/kg)
@@ -70,6 +79,7 @@ real, allocatable :: &
   SW(:,:),           &! Incoming shortwave radiation (W/m^2)
   Ta(:,:),           &! Air temperature (K)
   Ua(:,:)             ! Wind speed (m/s)
+
 end module DRIVING
 
 !-----------------------------------------------------------------------
@@ -211,3 +221,36 @@ real, allocatable :: &
   theta(:,:,:),      &! Volumetric moisture content of soil layers
   Tsoil(:,:,:)        ! Soil layer temperatures (K)
 end module STATE_VARIABLES
+
+!-----------------------------------------------------------------------
+! Average output variables  
+!-----------------------------------------------------------------------
+module AVERAGED_OUTPUTS
+real, allocatable ::   &
+  SWE_mean(:),         &
+  HS_mean(:),          &
+  alb_mean(:),         &
+  Gsurf_mean(:),       &
+  Hatmo_mean(:),       &
+  Latmo_mean(:),       &
+  Melt_mean(:),        &
+  Rnet_mean(:),        &
+  Rof_mean(:),         &
+  Tsurf_mean(:),       &
+  Tsoil_mean(:)
+end module
+
+!-----------------------------------------------------------------------
+! Landuse parameters  
+!-----------------------------------------------------------------------
+
+module LANDUSE_PARAMETERS
+real, allocatable ::   &
+  farea(:,:)
+end module
+
+
+
+
+
+
