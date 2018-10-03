@@ -1,0 +1,10 @@
+&drive
+ pathmet = "/data02/Ican/vic_sim/fsm_simulations/netcdf/forcings_st/"
+ pathres = "/data02/Ican/vic_sim/fsm_simulations/netcdf/fsmres_open"
+ pathparam = "/data02/Ican/vic_sim/fsm_simulations/netcdf/params_open/params_1km.nc"
+ spatial_res = "1km"
+/
+&simperiod
+ istart = 1
+ istop = 500
+/
