@@ -1,6 +1,6 @@
 &drive
  pathmet = "/data04/jmg/fsm_simulations/netcdf/forcings_st/"
- pathres = "/data04/jmg/fsm_simulations/netcdf/fsmres_open"
+ pathres = "/data04/jmg/fsm_simulations/netcdf/dummy"
  pathparam = "/data04/jmg/fsm_simulations/netcdf/params_open/params_1km.nc"
  spatial_res = "1km"
 /
