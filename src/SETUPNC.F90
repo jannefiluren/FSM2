@@ -153,8 +153,8 @@ if (Nsoil == 4) Dzsoil = (/0.1, 0.2, 0.4, 0.8/)
 dt = 10800
 lat = 0
 noon = 0
-zT = 20
-zU = 20
+zT = 2
+zU = 10
 lat = (3.14159/180)*lat  ! convert latitude to radians
 
 ! Allocate forcing variables

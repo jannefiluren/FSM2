@@ -10,7 +10,7 @@ exec julia --startup-file=no
 
 # How to start this script:
 
-# nice nohup ~/julia-0.7.0/bin/julia -p 12 "start_all.jl"
+# nice nohup ~/julia-0.7.0/bin/julia -p 20 "start_all.jl" &
 
 
 using NetCDF
